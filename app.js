@@ -10,3 +10,16 @@ const skipBack = document.getElementById(`back`);
 playBtn.addEventListener(`click`, function () {
   nature.play();
 });
+stopBtn.addEventListener(`click`, function () {
+  nature.pause();
+  nature.currentTime = 0;
+});
+pauseBtn.addEventListener(`click`, function () {
+  nature.pause();
+});
+skipFor.addEventListener(`click`, function () {
+  nature.currentTime += 10;
+});
+skipBack.addEventListener(`click`, function () {
+  nature.currentTime -= 10;
+});
